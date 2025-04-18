@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交调查结果</title>
+</head>
+<body>
+    <form id="finalForm" action="https://formspree.io/f/mpwpelqb" method="POST">
+        <!-- 隐藏字段将包含所有数据 -->
+        <input type="hidden" name="combined_data" id="combinedData">
+        <button type="submit">确认提交所有答案</button>
+    </form>
+
+    <script src="script.js"></script>
+    <script>
+        // 直接使用您写好的函数
+        const allData = getAllFormData();
+        
+        // 放入隐藏字段
+        document.getElementById('combinedData').value = JSON.stringify(allData);
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="fullscreen-bg">
+        <h1>讨厌的食物是什么</h1>
+        <div class="center-content">
+            <form class="login-form" id="form2" >                
+                <input type="text" name="username" placeholder="请输入">
+                <button type="button" id="button">下一步</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById('button')
+   
+        btn.addEventListener('click', function(){
+            alert('讨厌吃鱼');
+            saveAndNext('form2', 'twe.html'); 
+        });
+    </script>
+     </script>
+     <script src="script.js"></script>
+</body>
+</html>
